@@ -1,0 +1,25 @@
+POST           /session                      controllers.SessionController.create
+DELETE         /session                      controllers.SessionController.delete
+GET            /user                         controllers.UserController.show
+PUT            /user                         controllers.UserController.update
+PATCH          /user/image                   controllers.UserController.edit
+DELETE         /user                         controllers.UserController.delete
+GET            /users/:id                    controllers.UsersController.show(id: Long)
+GET            /rooms                        controllers.RoomsController.list
+GET            /rooms/:id                    controllers.RoomsController.show(id: Long)
+PUT            /rooms/:id                    controllers.RoomsController.update(id: Long)
+DELETE         /rooms/users                  controllers.RoomUsersController.delete(roomId: Long, userId :Long)
+GET            /rooms/ws/:id                 controllers.RoomsController.ws(id: Long)
+GET            /rooms/wss/:id                controllers.RoomsController.wss(id: Long)
+GET            /rooms/:id/authorities        controllers.RoomAuthoritiesController.list(id: Long)
+PUT            /rooms/:id/authorities        controllers.RoomAuthoritiesController.update(id: Long)
+POST           /rooms/:id/blacklist          controllers.BlacklistController.create(id: Long)
+GET            /rooms/:id/blacklist          controllers.BlacklistController.list(id: Long)
+PUT            /rooms/:id/blacklist          controllers.BlacklistController.update(id: Long)
+DELETE         /rooms/:id/blacklist          controllers.BlacklistController.delete(id: Long, ids: List[Long])
+POST           /rooms/:id/whitelist          controllers.WhitelistController.create(id: Long)
+GET            /rooms/:id/whitelist          controllers.WhitelistController.list(id: Long)
+PUT            /rooms/:id/whitelist          controllers.WhitelistController.update(id: Long)
+DELETE         /rooms/:id/whitelist          controllers.WhitelistController.delete(id: Long, ids: List[Long])
+
+OPTIONS        /*unused                      controllers.Application.options(unused)

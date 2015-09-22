@@ -1,0 +1,25 @@
+package co.chaberi.commons.json
+
+object Values {
+  val TALK = "talk"
+  val TYPING = "typing"
+  val TYPED = "typed"
+  val JOIN = "join"
+  val QUIT = "quit"
+  val UPDATE_ROOM_OWNER = "update_room_owner"
+  val UPDATE_ROOM_NAME = "update_room_name"
+  val UPDATE_ROOM_LIMIT = "update_room_limit"
+  val UPDATE_ROOM_NAME_RESULT = "update_room_name_result"
+  val UPDATE_USER = "update_user"
+  val UPDATE_USER_NAME = "update_user_name"
+  val UPDATE_USER_RESULT = "update_user_result"
+  val ROOM_OWNER = "room_owner"
+  val ROOM_NAME = "room_name"
+  val ROOM = "room"
+  val UPDATE_ROOM = "update_room_owner"
+  val UPDATE_ROOM_OWNER_RESULT = "update_room_owner_result"
+  val SUCCESS = "success"
+  val FAILURE = "failure"
+  val ERROR = "error"
+  val JSON_RESULT = "join_result"
+}
